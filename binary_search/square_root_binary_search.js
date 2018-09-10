@@ -2,7 +2,7 @@
 
 
 
-let number = 8;
+let number = 29;
 let res = 0;
 
 console.log((square_root_binary(number)));
