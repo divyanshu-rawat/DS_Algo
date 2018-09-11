@@ -3,13 +3,15 @@
 
 
 
+
+
 let array = [1,2,3,5,6,6,7,8,9,10];
 let res = -1;
 
-console.log(binary_search(0,array.length - 1,array, 19));
+console.log(binary_search_one(0,array.length - 1,array, 5));
 
 
-function binary_search(start, end , a, x) {
+function binary_search_one(start, end , a, x) {
 	
 	while(start <= end){
 
@@ -19,7 +21,8 @@ function binary_search(start, end , a, x) {
 		if(a[mid] == x){
 			return mid;
 		}
-		else if(a[mid] > x){
+		
+		if(a[mid] > x){
 			end = mid - 1;
 		}
 		else{
